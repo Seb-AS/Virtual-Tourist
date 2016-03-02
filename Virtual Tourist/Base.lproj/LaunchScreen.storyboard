@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xA4-SL-h8Q">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" red="0.050980392156862744" green="0.30196078431372547" blue="0.46274509803921571" alpha="1" colorSpace="calibratedRGB"/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="-79" y="43" width="557" height="557"/>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(c) 2016 Sebastian Masseroni" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XNG-Iz-XRf">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Virtual Tourist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yG7-jG-hpP">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="29" y="527" width="343" height="21"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="xA4-SL-h8Q" secondAttribute="trailing" constant="-20" id="1EY-eZ-awE"/>
+                            <constraint firstItem="xA4-SL-h8Q" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="4SQ-io-T5z"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="xA4-SL-h8Q" secondAttribute="bottom" id="EUF-9W-t4Z"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="XNG-Iz-XRf" secondAttribute="bottom" constant="20" id="NDW-wH-3Bb"/>
+                            <constraint firstItem="XNG-Iz-XRf" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="8" id="Sp3-iD-4zM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XNG-Iz-XRf" secondAttribute="trailing" constant="9" id="Yfp-Hd-Gsj"/>
+                            <constraint firstItem="xA4-SL-h8Q" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="75" id="dqr-il-8Od"/>
+                            <constraint firstItem="xA4-SL-h8Q" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="-20" id="drf-XB-vO5"/>
+                            <constraint firstItem="xA4-SL-h8Q" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="qD1-WO-gGF"/>
+                            <constraint firstItem="xA4-SL-h8Q" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="topMargin" id="qdw-kd-hU2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="XNG-Iz-XRf"/>
+                                <exclude reference="yG7-jG-hpP"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Sp3-iD-4zM"/>
+                                <exclude reference="Yfp-Hd-Gsj"/>
+                                <exclude reference="dqr-il-8Od"/>
+                                <exclude reference="qD1-WO-gGF"/>
+                                <exclude reference="NDW-wH-3Bb"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="XNG-Iz-XRf"/>
+                                <include reference="yG7-jG-hpP"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Sp3-iD-4zM"/>
+                                <include reference="Yfp-Hd-Gsj"/>
+                                <exclude reference="4SQ-io-T5z"/>
+                                <include reference="dqr-il-8Od"/>
+                                <include reference="qD1-WO-gGF"/>
+                                <include reference="NDW-wH-3Bb"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="51" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="512" height="512"/>
+    </resources>
+</document>
