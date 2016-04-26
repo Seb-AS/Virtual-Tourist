@@ -39,6 +39,7 @@ extension FlickrClient {
             ParameterKeys.BBOX: createBoundingBoxString(pin),
             ParameterKeys.PAGE: pageNumber,
             ParameterKeys.PER_PAGE: 21,
+            ParameterKeys.TAGS: "food",
             ParameterKeys.SORT: sortBy
         ]
         
